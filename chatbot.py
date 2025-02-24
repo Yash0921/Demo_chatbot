@@ -47,7 +47,7 @@ if documents:
     # Setup the Chat Model with the API key explicitly provided
     chat_model = ChatOpenAI(model_name="gpt-4", openai_api_key=API_KEY)
     qa_chain = RetrievalQA.from_chain_type(llm=chat_model, retriever=retriever, chain_type="stuff")
-    
+
     st.subheader("Ask a Question Based on the File")
     user_query = st.text_input("Enter your question:")
     if st.button("Get Answer") and user_query:
