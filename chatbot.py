@@ -10,8 +10,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 # Set OpenAI API Key (hardcoded as per your request)
-# API_KEY = "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"
-# openai.api_key = API_KEY
+API_KEY = "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"
+openai.api_key = API_KEY
 
 st.title("File-Based Chatbot (RAG Model)")
 
